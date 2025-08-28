@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background: #fffafc;
+  color: #333;
+}
+
+header {
+  background: #e91e63; 
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;             
+  justify-content: center;  
+  background: #333;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem;
+  display: block;
+}
+
+nav ul li a:hover {
+  background: #e91e63;
+  border-radius: 4px;
+}
+
+main {
+  display: grid;                         
+  grid-template-columns: 2fr 1fr;       
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+
+.content article {
+  background: #fce4ec;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.content h2 {
+  margin-bottom: 0.5rem;
+  color: #c2185b;
+}
+
+/* Sidebar styling */
+.sidebar {
+  background: #f8bbd0;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.sidebar h2 {
+  margin-bottom: 0.5rem;
+  color: #880e4f;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #333;
+  color: white;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 0.9rem;
+  }
+
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+
+}
+.dark-mode {
+  background: #222;
+  color: #f8f8f8;
+}
+
+.dark-mode header {
+  background: #444;
+}
+
+.dark-mode nav ul {
+  background: #555;
+}
+.dark-mode nav ul li a:hover {
+  background: #777;
+}
+.dark-mode .content article {
+  background: #333;
+}
+.dark-mode .sidebar {
+  background: #444;
+}
+.dark-mode footer {
+  background: #555;
+}
+.dark-mode .content article,
+.dark-mode .sidebar {
+  color: #f8f8f8;
+}
+/* === HIDE extra JS buttons so only Dark Mode is visible === */
+#check-dramas,
+#add-drama,
+#change-title,
+#js-magic-text {
+  display: none;
+}
+
+/* Keep Dark Mode button styled */
+#toggle-dark-mode {
+  background: #e91e63;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 1rem auto;
+  display: block;
+  font-size: 1rem;
+}
+
+#toggle-dark-mode:hover {
+  background: #c2185b;
+}
+/* Highlighted drama */
+.highlight {
+  background-color: #fff3cd; /* soft yellow */
+  border: 2px solid #f0ad4e;
+  padding: 10px;
+  border-radius: 8px;
+}
+/* === END HIDE extra JS buttons so only Dark Mode is visible === */

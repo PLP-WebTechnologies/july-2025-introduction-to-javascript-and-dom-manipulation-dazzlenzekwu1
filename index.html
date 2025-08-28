@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KDrama Korner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1 id="main-heading">KDrama Korner</h1>
+    <p>Your cozy corner for honest Kdrama recs</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Reviews</a></li>
+      <li><a href="#">Top Picks</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Content Area -->
+    <section class="content">
+      <article>
+        <h2>✨ Crash Landing on You</h2>
+        <p><strong>Genre:</strong> Romance, Comedy, Drama</p>
+        <p>A South Korean chaebol heiress accidentally paraglides into North Korea and meets a soldier. A heart-warming, funny, and emotional story that’s impossible not to binge.</p>
+        <p id="crash-extra" style="display:none;">The chemistry between FL and ML was fire and the OST is unforgettable!</p>
+  <button onclick="toggleReview('crash-extra')">Show More</button>
+      </article>
+
+      <article>
+        <h2>🌙 It's Okay to Not Be Okay</h2>
+        <p><strong>Genre:</strong> Romance, Healing, Mental Health</p>
+        <p>A children’s book author with a troubled past and a caretaker at a psychiatric hospital find healing in each other.</p>
+      </article>
+
+      <article>
+        <h2>🔥 Vincenzo</h2>
+        <p><strong>Genre:</strong> Dark Comedy, Crime</p>
+        <p>A Korean-Italian mafia lawyer returns to Korea and takes on corruption with stylish vengeance.</p>
+      </article>
+    </section>
+
+    <!-- Sidebar Area -->
+    <aside class="sidebar">
+      <h2>📺 Currently Watching</h2>
+      <ul id="watching-list">
+        <li>King the Land</li>
+        <li>Queen of Tears</li>
+        <li>Start-Up</li>
+      </ul>
+
+      <h2>⭐ Top 5 Recs</h2>
+      <ol id="top-recs">
+        <li>Reply 1988</li>
+        <li>Crash Landing on You</li>
+        <li>Vincenzo</li>
+        <li>Hospital Playlist</li>
+        <li>Goblin</li>
+      </ol>
+    </aside>
+  </main>
+
+
+   <section class="interactions">
+  <button onclick="toggleTheme()">Toggle Dark Mode</button>
+  <button onclick="highlightFavorite()">Highlight My Favorite</button>
+</section>
+
+  <footer>
+    <p>&copy; 2025 KDrama Haven | Made with ❤️ by Dazzle</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
